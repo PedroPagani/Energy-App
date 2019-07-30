@@ -1,9 +1,19 @@
 * {
     //border: solid 1px red;
+    box-sizing: border-box;
 }
 
 p {
     margin: 0;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 

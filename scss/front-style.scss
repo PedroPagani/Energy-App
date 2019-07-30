@@ -15,6 +15,7 @@ $white-color: white;
 
 [data-modal="close"] {
     top: -410px;
+    transition: 300ms ease;
 }
 
 [data-modal="open"] {
@@ -22,15 +23,18 @@ $white-color: white;
     transition: 300ms ease;
 }
 
+
+// Black background animation
 [data-blackBg="close"] {
     background-color: rgba(0,0,0,0);
     transition: 300ms ease;
-    display: none;
+
 }
 
 [data-blackBg="open"] {
     background-color: rgba(0,0,0,0.8);
     transition: 300ms ease;
+    
 }
 
 
@@ -42,11 +46,18 @@ $white-color: white;
         padding: 50px;
         max-width: 500px;
         margin: 0 auto;
-        background-color: white;
+        background-color: $light-yellow;
+        form {
+            button {
+                background-color: $dark-green;
+                border-color: $dark-green;
+            }
+        }
     }
 }
 
 .black-bg {
+    display: none;
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -54,6 +65,7 @@ $white-color: white;
     z-index: 5;
     
 }
+
 
 
 
@@ -119,5 +131,18 @@ $white-color: white;
 
 .btn-primary:not(:disabled):not(.disabled):active {
     background-color: $light-green;
+}
+
+
+.close-button {
+    text-align: center;
+    padding-top: 50px;
+    i {
+        font-size: 24px;
+        color: grey;
+    }
+    i:hover {
+        cursor: pointer;
+    }
 }
 
